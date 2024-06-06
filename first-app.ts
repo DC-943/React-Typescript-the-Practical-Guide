@@ -78,7 +78,7 @@ class AuthCredentials implements Credentials{
 }
 
 function login(credentials:Credentials){
-
+   
 
 }
 
@@ -109,7 +109,7 @@ interface AppUser{
 }
 
 interface AppAdmin  extends Admin, AppUser{
-
+  
 
 }
 let admin:AppAdmin;
@@ -162,3 +162,10 @@ function merge<T,u>(a:T, b:U){
 const newUser =merge<{name: string}, {age:number}>({name:"Max"}, {age:34})
 
 newUser.name
+
+
+
+
+
+
+
