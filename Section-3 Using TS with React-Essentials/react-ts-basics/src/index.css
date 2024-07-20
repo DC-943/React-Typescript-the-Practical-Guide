@@ -1,20 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border-size: bordered-box;
-  over-flow: hidden;
 }
 
 html {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#f0f6f8, #1e1e1e);
+  background: linear-gradient(#f0f6f8, #e0e1e7);
 }
 
 main {
@@ -23,7 +19,6 @@ main {
   margin: 3rem auto;
   padding: 2rem;
   background-color: #3a4346;
-  //background-color: blue;
   color: #f0f6f8;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
@@ -131,7 +126,31 @@ li button:hover {
   color: #f9a73b;
 }
 
-.fallback {
+.infobox {
+  margin: 2rem 0;
+  padding: 0.5rem;
   text-align: center;
-  color: #acd1ce;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  font-size: 0.85rem;
+  border-radius: 4px;
+}
+
+.infobox-hint {
+  border: 1px solid #96f5f7;
+  color: #96f5f7;
+}
+
+.infobox-warning.warning--low {
+  border: 1px solid #f6d84f;
+  color: #f6d84f;
+}
+
+.infobox-warning.warning--medium {
+  border: 1px solid #f9a73b;
+  color: #f9a73b;
+}
+
+.infobox-warning.warning--high {
+  border: 1px solid #f97373;
+  color: #f97373;
 }
